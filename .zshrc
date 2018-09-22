@@ -111,12 +111,17 @@ POWERLEVEL9K_LEFT_SEGMENT_SEPARATOR=$'\uE0B0'
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git
+  git,
+  shrink-path
 )
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
+
+# short path
+setopt prompt_subst
+PS1='%n@%m $(shrink_path -f)>'
 
 # functions
 
@@ -131,3 +136,5 @@ alias tarmac='cd ~/code/tarmac'
 alias gs='tig status'
 alias gc='git_commit'
 
+export PATH="/usr/local/opt/ruby@2.3/bin:$PATH"
+export PATH=/usr/local/lib/ruby/gems/2.3.0/bin:$PATH
