@@ -135,6 +135,10 @@ alias sub='~/bin/sub'
 alias tarmac='cd ~/code/tarmac'
 alias gs='tig status'
 alias gc='git_commit'
+alias python=python3
+alias pip=pip3
+alias ipy=ipython
 
 export PATH="/usr/local/opt/ruby@2.3/bin:$PATH"
 export PATH=/usr/local/lib/ruby/gems/2.3.0/bin:$PATH
+# export PATH=/usr/local/miniconda3/bin:"$PATH"

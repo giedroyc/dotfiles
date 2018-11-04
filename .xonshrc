@@ -1,0 +1,5 @@
+# XONSH WIZARD START
+xontrib load powerline
+# XONSH WIZARD END
+
+source-bash $(/usr/libexec/path_helper -s)
