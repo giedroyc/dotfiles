@@ -8,7 +8,7 @@ export WORKON_HOME=$HOME/.virtualenvs
 export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
 export VIRTUALENVWRAPPER_VIRTUALENV=/usr/local/bin/virtualenv
 source /usr/local/bin/virtualenvwrapper.sh
-source /usr/local/opt/autoenv/activate.sh
+# source /usr/local/opt/autoenv/activate.sh
 
 
 # ui
@@ -112,7 +112,11 @@ POWERLEVEL9K_LEFT_SEGMENT_SEPARATOR=$'\uE0B0'
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git,
-  shrink-path
+  shrink-path,
+  zsh-autosuggestions,
+  zsh-syntax-highlighting,
+  autoenv,
+  autojump
 )
 
 source $ZSH/oh-my-zsh.sh
