@@ -1,7 +1,14 @@
+# fpath
+
+# fpath=(./completion $fpath)
+
 # commands
 
 # Setting PATH for Python 3.6 installed by brew
 export PATH=/usr/local/share/python:$PATH
+
+# istio
+export PATH=/Users/giedroyc/bin/istio/istio-1.1.0/bin:$PATH
 
 # virtualenv
 export WORKON_HOME=$HOME/.virtualenvs
@@ -110,13 +117,14 @@ POWERLEVEL9K_LEFT_SEGMENT_SEPARATOR=$'\uE0B0'
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
+
 plugins=(
-  git,
-  shrink-path,
-  zsh-autosuggestions,
-  zsh-syntax-highlighting,
-  autoenv,
+  git
+  shrink-path
+  zsh-autosuggestions
+  zsh-syntax-highlighting
   autojump
+  autoenv
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -137,6 +145,7 @@ git_commit() {
 
 alias sub='~/bin/sub'
 alias tarmac='cd ~/code/tarmac'
+alias mu='cd ~/code/mugen'
 alias gs='tig status'
 alias gc='git_commit'
 alias python=python3
